@@ -1,0 +1,24 @@
+﻿@model FirstLook.Models.Mailing
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>index</h2>
+
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameForModel(model=>model.FirstName)</th>
+        <th>@Html.DisplayNameForModel(model=>model.LastName)</th>
+        <th>@Html.DisplayNameForModel(model=>model.Email)</th>
+    </tr>
+    
+    @foreach(var item in Model)
+    {
+    <tr>
+        <td>@Html.DisplayFor( Model => item.FirstName )</td>
+        <td>@Html.DisplayFor( Model => item.FirstName )</td>
+        <td>@Html.DisplayFor( Model => item.FirstName )</td>
+    </tr>
+    }
+    
+</table>
